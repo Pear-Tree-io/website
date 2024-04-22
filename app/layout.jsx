@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-// import { Footer } from '../components/footer';
+import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 
 export const metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
                     <div className="flex flex-col w-full max-w-5xl mx-auto grow">
                         <Header />
                         <div className="grow">{children}</div>
-                        <Footer />
+                        {/* <Footer /> */}
                     </div>
                 </div>
             </body>
