@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+    font-family: "NanumSquareRound";
+    src: url("../_font/NanumSquareRoundOTFL") format(otf);
+    font-style: normal;
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "NanumSquareRound";
+    src: url("../_font/NanumSquareRoundOTFR") format(otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NanumSquareRound";
+    src: url("../_font/NanumSquareRoundOTFB") format(otf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "NanumSquareRound";
+    src: url("../_font/NanumSquareRoundOTFEB") format(otf);
+    font-style: normal;
+    font-weight: bolder;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STYLES */
+
+:root {
+    --main-bg-top-color: #cbdeff;
+    --main-bg-bottom-color: #ffdbe5;
+    --main-text-color: #551212;
+
+    --main-top-bar-color: white;
+    --main-top-bar-text-color: black;
+    --main-top-bar-text-hover-color: black;
+}
+
+html {
+    background: linear-gradient(to bottom, var(--main-bg-top-color), var(--main-bg-bottom-color));
+    color: var(--main-text-color);
+    font-size: 2rem;
+    text-align: center;
+    font-family: "NanumSquareRound";
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.Head-section {
+}
+
+.Head-section:hover {
+}
+
+.TopNavigationBar {
+
+}
+
+.TopNavigationBar {
+    background-color: var(--main-top-bar-color);
+    overflow: hidden;
+    padding: 0 5rem;
+}
+
+.TopNavigationBar a {
+    float: right;
+    color: var(--main-top-bar-text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.TopNavigationBar a:hover {
+    background-color: #ddd;
+    color: var(--main-top-bar-text-hover-color);
+}
+
+.TopNavigationBar a.active {
+    background-color: black;
+    color: white;
+}
+
+.Body-section {
+}
+
+.Body-section:hover {
+}
+
+.Footer-section {
+}
+
+.Footer-section:hover {
+}
+
