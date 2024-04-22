@@ -30,7 +30,7 @@ const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <main className="flex flex-col gap-8 sm:gap-16">
-            <section className="flex flex-col items-start gap-3 sm:gap-4">
+            {/* <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
                 <p className="text-lg">Get started with Next.js and Netlify in seconds.</p>
@@ -52,7 +52,12 @@ export default function Page() {
                 <RandomQuote />
                 <Markdown content={postDynamicContentExplainer} />
             </section>
-            {/* !!cards?.length && <CardsGrid cards={cards} /> */}
+            {!!cards?.length && <CardsGrid cards={cards} />} */}
+            <section>
+                <h2>Pear Tree</h2>
+                <p>Welcome to the Pear Tree website!</p>
+                {/* Add your content here */}
+            </section>
         </main>
     );
 }
