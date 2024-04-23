@@ -18,7 +18,8 @@
     }
 
     html {
-        background-image: url('public/background.png');
+        background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+        background-image: url('../public/background.png');
         background-repeat: repeat;
         font-family: 'ONE-Mobile-POP';
         font-size: 3em;
