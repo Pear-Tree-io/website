@@ -17,6 +17,11 @@
         font-size: 3em;
     }
 
+    html {
+        font-family: 'ONE-Mobile-POP';
+        font-size: 3em;
+    }
+
     h1 {
         font-size: 4em;
         /* @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl; */
