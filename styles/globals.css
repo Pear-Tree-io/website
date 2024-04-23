@@ -12,16 +12,24 @@
 
 @layer base {
     :not(pre) > code {
+        font-family: 'ONE-Mobile-POP';
         /* @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200; */
-        font-size: 0.9em;
+        font-size: 3em;
     }
 
     h1 {
+        font-size: 4em;
         /* @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl; */
     }
-}
 
+    h2 {
+        font-family: 'ONE-Mobile-POP';
+        font-size: 3.8em;
+    }
+}
+ 
 a {
+    font-family: 'ONE-Mobile-POP';
     @apply underline
 }
 

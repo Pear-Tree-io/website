@@ -55,8 +55,8 @@ export default function Page() {
             {!!cards?.length && <CardsGrid cards={cards} />} */}
             
             <section>
-                <h2>Pear Tree</h2>
-                <p>Welcome to the Pear Tree website!</p>
+                <h2>페어트리</h2>
+                <p>양키 만드는 중</p>
                 {/* Add your content here */}
             </section>
         </main>

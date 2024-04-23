@@ -15,13 +15,13 @@ export default function RootLayout({ children }) {
             <head>
                 <link rel="icon" href="/peartree_logo_192.png" sizes="any" />
             </head>
-            <body className="antialiased text-white bg-orange-300">
-                <div className="flex flex-col min-h-screen px-6 bg-grid-pattern sm:px-12">
+            <body className="antialiased text-white bg-gray-900">
+                
                     <div className="flex flex-col w-full max-w-5xl mx-auto grow">
                         <Header />
                         <div className="grow">{children}</div>
                         <Footer />
-                    </div>
+
                 </div>
             </body>
         </html>
