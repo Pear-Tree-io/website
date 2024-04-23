@@ -30,7 +30,7 @@ const ctx = getNetlifyContext();
 
 export default function Page() {
     return (
-        <main className="bg-repeat flex flex-col gap-8 sm:gap-16" style={{backgroundImage : "url(" + background + ")"}}>
+        <main className="flex flex-col gap-8 sm:gap-16">
             {/* <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
