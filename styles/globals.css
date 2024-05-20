@@ -1,43 +1,21 @@
-@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'ONE-Mobile-POP';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @layer base {
     :not(pre) > code {
-        font-family: 'ONE-Mobile-POP';
-        /* @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200; */
-        font-size: 3em;
-    }
-
-    html {
-        background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-        background-image: url('../public/background.png');
-        background-repeat: repeat;
-        font-family: 'ONE-Mobile-POP';
-        font-size: 3em;
+        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
+        font-size: 0.9em;
     }
 
     h1 {
-        font-size: 4em;
-        /* @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl; */
-    }
-
-    h2 {
-        font-family: 'ONE-Mobile-POP';
-        font-size: 3.8em;
+        @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl;
     }
 }
- 
+
 a {
-    font-family: 'ONE-Mobile-POP';
     @apply underline
 }
 
@@ -50,7 +28,7 @@ a {
 }
 
 .markdown p {
-    /* @apply mb-3; */
+    @apply mb-3;
 }
 
 .btn:disabled {
