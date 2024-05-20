@@ -3,7 +3,7 @@ import { SubmitButton } from '../../components/submit-button';
 import { Markdown } from '../../components/markdown';
 
 export const metadata = {
-    title: 'On-Demand Revalidation'
+    title: 'Privacy Policy'
 };
 
 const tagName = 'randomWiki';
