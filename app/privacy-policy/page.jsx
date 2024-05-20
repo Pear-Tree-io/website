@@ -11,277 +11,6 @@ const randomWikiUrl = 'https://en.wikipedia.org/api/rest_v1/page/random/summary'
 const maxExtractLength = 200;
 const revalidateTTL = 60;
 
-const explainer = `
-Effective Date: May 20th, 2024
-
-Thank you for playing our games! This Privacy Policy describes:
-
-The ways we collect personal data about you and why we do so
-
-How we use your personal data, and
-
-The choices you have about your personal data.
-
-This Privacy Policy applies to Pear Tree's games, store, sites, and related services, which we here collectively call the Service. We may periodically update this Privacy Policy by posting a new version on peartree.com. If we make any material changes, we will notify you as required under applicable law, including by posting a notice in the Service prior to the change becoming effective. Your continued use of the Service after the effective date will be subject to the new Privacy Policy.
-
-CONTACT US
-If you have questions about data protection, or if you have any requests for resolving issues with your personal data, we encourage you to primarily contact us through the support features within each Pear Tree game, so we can reply to you more quickly. Alternatively, you may contact:
-
-Name of the controller: Pear Tree
-Address: 79, Gimpohangang 9-ro, Gimpo-si, Gyeonggi-do, Republic of Korea
-Attn: Privacy
-email: contactus@pear-tree.io
-
-THE DATA WE COLLECT
-The categories of personal data we collect depend on the Services you use, and the requirements of applicable law.
-
-Data you provide us directly.
-Contact information (such as email address)
-
-Player name or tag and password
-
-Profile information (such as profile photo)
-
-Your messages and other content you submit when you use the Service (such as chat logs and player support tickets)
-
-Data you provide in connection with surveys, promotions, sweepstakes, competitions, and other events
-
-Other data you choose to give us (such as name and phone number when you participate in (Pear Tree Creators or Pear Tree Make)
-
-Our payment service providers will collect your payment details in connection with any purchases you make through the Pear Tree Store
-
-Data we collect automatically.
-Data about your account and game progress, including in most cases an automatically created internal account ID
-
-Your IP address and mobile device identifiers (such as your device or advertising ID)
-
-Data about your device, such as device name and operating system, browser type and language, internet service provider, and mobile carrier
-
-Data we collect with cookies and similar technologies (see more below)
-
-Approximate location data (as derived from IP address)
-
-Data about your use of the Service, such as gameplay data, purchases made, and your interactions with other players inside the Service
-
-You also have the option to create a Pear Tree ID using your email address or other contact information.
-
-Data we collect from our partners.
-We also use third-party partners, such as social networking sites, data analytics providers, and advertising networks to supplement information we have about you, such as:
-
-Data we receive if you link a third-party tool with the Service (such as LINE, WeChat, or Kakao in some markets)
-
-Demographic data (such as to determine the coarse location of your IP address)
-
-Data to fight fraud (such as refund abuse in games or click fraud in advertising)
-
-Data from platforms that the games run on or data from payment service providers (such as payment verification data)
-
-Data for advertising and analytics purposes (such as surveys), so we can provide you a better Service
-
-Data that you have made available to us from a third-party service (such as LINE, WeChat, or Kakao in some markets) via your privacy settings
-
-WHY DO WE COLLECT YOUR DATA
-We use your data for a variety of business purposes, such as:
-
-To make the Service work.
-To perform the contract, we process data necessary to
-
-Create accounts and allow you to play our games and use our Service
-
-Operate the Service
-
-Verify and confirm payments
-
-Provide and deliver products and services you request
-
-Send you Service-related communications
-
-To make the Service more suitable for our players.
-To provide a great Service to our players, we have a legitimate interest to collect and process necessary data to
-
-Update and develop player profiles
-
-Develop and improve the Service and player experience
-
-Manage our relationship with you
-
-Provide social features as part of the Service
-
-Customize your Service experience
-
-Respond to your comments and questions and provide player support
-
-Provide you Pear Tree offers in the Service as well as in other websites and services (including by email)
-
-Send you related information, such as updates, security alerts, and support messages
-
-Enable you to communicate with other players
-
-To show personalized advertisements.
-To show you personalized advertisements in the Service and elsewhere (including email) we have a legitimate interest to process necessary data to
-
-Track the content you access in connection with the Service and your online behavior
-
-Deliver, target, and improve our advertising and the Service
-
-For information on how to opt-out from personalized advertisements, see section 'Your Rights and Options' below.
-
-To keep the Service safe and fair.
-Ensuring a level playing field in the Service is a top priority for us. For more information on our acceptable use policy; Pear Tree Terms of Service.
-
-In order to keep the Service and its social features safe and fair, to fight fraud and ensure acceptable use otherwise, we have a legitimate interest to process necessary data to
-
-Analyze and monitor the use of the Service and its social features
-
-Moderate chats either automatically or manually
-
-Take action against fraudulent or misbehaving players
-
-To analyze, profile, and segment.
-In all of the above cases and purposes, we may analyze, profile, and segment all collected data.
-
-With your consent.
-With your consent, we may process your data for additional purposes.
-
-We may also collect and use your device identifiers to display and personalize in-game ads and serve behaviorally targeted advertising as explained below. Where applicable, we may collect your advertising identifier (IDFA, GAID), vendor identifier, IP address, device ID, and other device identifiers (country, OS version, device model, client version) for these purposes. Under applicable privacy laws, including the General Data Protection Regulation (GDPR), we are required to ask your consent to do so.
-
-This data is shared with your consent so that our ad partners can deliver the right ad and optimize the ad content to make sure you don’t see the same ad multiple times. We share your device identifiers with selected partners for such ad delivery and personalization.
-
-You can manage your consent in the game settings and limit ad tracking in your device settings. Please note that opt-outs are specific to each browser and device and it may take a little bit of time before your opt-out will take effect.
-
-For mobile advertising in apps, you can reset your Advertising Identifier and depending on your device, select to opt out of interest-based ads (Android) or turn on the Limit Ad Tracking setting (iOS).
-
-The partners operate the ad network and mediation platform, as well as facilitate and participate in ad inventory bidding. The partners may also use the device identifiers for fraud detection purposes based on their legitimate interest. For more information, please check the partners’ privacy policies.
-
-ironSource Privacy Policy: https://developers.is.com/ironsource-mobile/air/ironsource-mobile-privacy-policy/#step-1
-
-Vungle Privacy Policy: https://vungle.com/privacy/
-
-Google Privacy Policy: https://policies.google.com/privacy
-
-Fyber Privacy Policy: https://www.digitalturbine.com/fyber-services-privacy-statement/
-
-Liftoff Privacy Policy: https://liftoff.io/privacy-policy/
-
-Mintegral Privacy Policy: https://www.mintegral.com/en/privacy
-
-Supersonic Privacy Policy: https://supersonic.com/privacy/
-
-Unity Ads Privacy Policy: https://unity.com/legal/privacy-policy
-
-Facebook Privacy Policy: https://www.facebook.com/privacy/policy/
-
-Apple Search Ads: https://searchads.apple.com/privacy
-
-Applovin Privacy Policy: https://www.applovin.com/privacy/
-
-WHO CAN SEE YOUR DATA
-Apart from Pear Tree, your data can be accessed by others in the following situations:
-
-Other players and users.
-Social features are a core component of our games. Other players and users may, for example, see your profile data, in-game activities, and read the messages you have posted.
-
-Our service providers.
-Pear Tree has vendors who help us to provide the Service. These vendors process your data only at and according to Pear Tree's instructions to provide the Service, and perform tasks such as hosting, player support, advertising, analytics, and fraud prevention.
-
-Other companies and public authorities.
-In order to verify payments (with payment providers such as Paypal) and combat fraud and illegal activity, we may process and disclose data with other companies and organizations and provide it to public authorities in response to lawful requests.
-
-We may also disclose your data based on your consent, to comply with the law, or to protect the rights, property, or safety of us, our players, or others.
-
-Advertising and Social Media partners.
-The Service includes features from our partners, such as social media interaction tools, functionalities through application programming interfaces (APIs) or software development kits (SDKs), and in-game advertising. A list of these partners is available at peartree.com/en/partner-opt-out. These partners may access your data and operate under their own privacy policies. We encourage you to check their privacy policies to learn more about their data processing practices.
-
-These partners may access data regarding your activities and your device (such as your IP address, mobile identifiers, page(s) visited, location, time of day). We may also combine and share data we have collected about you with third-party advertising partners. These advertising partners may use this data (and similar data collected from other services) for purposes of delivering targeted advertisements to you when you visit third-party services within their networks. These partners may operate under their own privacy policies. This practice is commonly referred to as “interest-based advertising” or “online behavioral advertising.” If you prefer not to share your personal data with third-party advertising partners, you may follow the instructions in “Your Rights and Options” below.
-
-INTERNATIONAL DATA TRANSFERS
-Our Service is global by nature and your data can therefore be transferred to anywhere in the world. Because different countries may have different data protection laws than your own country, we take steps to ensure adequate safeguards are in place to protect your data as explained in this Privacy Policy. Adequate safeguards that we may use include standard contractual clauses approved by the EU Commission and other lawful safeguards.
-
-YOUR RIGHTS AND OPTIONS
-Opt out of marketing emails and other direct marketing.
-Where allowed under applicable laws, Pear Tree may send you marketing communications based on the existing customer relationship.
-
-You may opt out of receiving promotional communications, such as marketing emails from us by following the instructions in such communications, or by changing your in-game settings. The updated settings may not be effective immediately. Note that you may still continue to receive non-promotional communications from us, such as communications regarding the Service or updates to our Pear Tree Terms of Service or this Privacy Policy or transactional information e.g. relating to your purchases on the Service.
-
-Push Notifications
-We may send you push notifications through our mobile applications. You may at any time opt out from receiving these types of communications by changing the settings on your mobile device.
-
-Opt-out of targeted advertising.
-You can opt-out of interest-based advertising on mobile applications by checking the privacy settings of your Android or iOS device and turning off “Allow Apps to Request to Track” or selecting "Limit Ad Tracking" (Apple iOS) or "Opt-out of Interest Based Ads" (Android). For more information, see also: peartree.com/en/partner-opt-out.
-
-You can also opt out from personalized in-game offers through the options provided in the game settings (where applicable).
-
-Access the personal data we hold about you.
-If you request, we will provide you a copy of your personal data in an electronic format.
-
-Your other rights.
-You also have the right to correct your data, have your data deleted, object to how we use or share your data, and restrict how we use or share your data. You can always withdraw your consent.
-
-We will respond to all requests within a reasonable timeframe. If you have an unresolved privacy or data use concern that we have not addressed satisfactorily, you may also contact your local data protection authority within the European Economic Area, Switzerland, or the UK for unresolved complaints.
-
-If you wish to exercise any of your data subject rights described above, please use the support options described in “Contact Us” above. We will respond to all requests in accordance with applicable laws. To protect your privacy, we may also take additional steps to verify your identity before fulfilling your request, such as by requesting you provide us a purchase receipt or other account information, asking you to link your email address with your game account (for example through Pear Tree ID), or asking you to answer questions regarding your activities on our Services. Once you have verified your identity, you may also designate an authorized agent to exercise your rights on your behalf by providing the agent’s contact information to our customer support staff, as required by applicable law.
-
-You have the right not to receive discriminatory treatment as a result of your exercise of these rights.
-
-COOKIES AND SIMILAR TECHNOLOGIES
-Like most online services, we and our partners use cookies and similar technologies to provide and personalize the Service, analyze use, target advertisements, and prevent fraud. Cookies and similar technologies allow us and our partners to store preferences and track your activities within the Service. Note that our partners may operate under their own privacy policies.
-
-We and our partners collect and store information about users' interactions with unaffiliated websites and applications that use our technologies, including cookies and similar tracking technologies. This allows us to infer the presence of a common user or household behind multiple devices or browsers, for instance, and then link those browsers and devices into a device graph. We do so in order to
-
-detect and prevent fraud;
-
-improve the Service;
-
-allow users to use the Service on one device and pick up seamlessly where they left off on another device;
-
-analytics, personalization, and attribution;
-
-limit the number of times a user is shown the same advertisement, across all known or inferred devices; and/or
-
-provide personalized advertising on each device that is inferred from the browsing patterns on all of the devices.
-
-You can disable cookies in your browser settings, but some parts of the Service may then not function properly. Here are links to some popular browsers where you can adjust your cookie and web data settings:
-
-Apple Safari
-
-Google Chrome
-
-Microsoft Edge
-
-Mozilla Firefox
-
-For display advertising on the Web, you can also adjust your browser settings to limit certain tracking by means of cookies, and by visiting the following sites:
-
-http://www.aboutads.info/choices and http://www.youronlinechoices.eu/.
-
-On some of our websites, we use third-party analytics and telemetry providers and certain marketing providers for the above purposes. Where applicable, we ask for your consent on the site.
-
-Google Analytics for visitor and usage analytics
-
-Google Ads for ad targeting, analytics, and reporting
-
-Facebook Pixel for marketing
-
-Please note that above 3rd parties are not necessarily being used at all sites, or on all market areas. For further information (including how to opt out), please visit peartree.com/en/partner-opt-out.
-
-HOW DO WE PROTECT YOUR DATA
-Security Safeguards.
-In order to help ensure a secure and safe player experience, we are continuously developing and implementing administrative, technical, and physical security measures to protect your data from unauthorized access or against loss, misuse, or alteration.
-
-Data retention.
-We retain your data for as long as your account is active or as needed to provide you the Service. We may for example periodically de-identify unused game accounts, and we may regularly review and de-identify unnecessary data.
-Note that if you ask us to remove your personal data, we will retain your data as necessary for our legitimate business interests, such as to comply with our legal obligations, resolve disputes, and enforce our agreements.
-
-CHILDREN
-Protecting children’s privacy online is very important to us. Generally, our Services are not directed to children under 13 (or other ages as required by local law), and the Services do not knowingly collect personal data from children, except as described in the following paragraph.
-
-For games that are not directed at children but nonetheless may appeal to them, we take additional steps to limit access to these Services based on the player’s age. For these Services, when a player indicates they are under 13 (or the applicable age in their territory), we will limit their access to certain features, such as social media and chat features, as well as certain types of notification alerts. We also limit the processing of personal data to only what is necessary to support the internal operations of our Services.
-
-Please note that for some of our Services we may use a higher age limit (such as 16) than described in the above two paragraphs. We do this to provide a safe game experience for our players and to protect Young Players.
-
-If you are a parent or guardian and wish to review personal data collected from your child, or have that information modified or deleted, you may contact us as described above. If we become aware that a child has provided us with personal data contrary to the above, we will delete any personal data we have collected, unless we have a legal obligation to keep it, and terminate the child’s account and/or revert them to the underage experience, as applicable.`;
-
-
 export default async function Page() {
     async function revalidateWiki() {
         'use server';
@@ -290,8 +19,53 @@ export default async function Page() {
 
     return (
         <>
-            <h1>PRIVACY POLICY</h1>
-            <p1>{explainer}</p1>
+<h1>Privacy policy</h1>
+<p>We respect your privacy and are committed to protecting it through our compliance with this privacy policy (“Policy”). This Policy describes the types of information we may collect from you or that you may provide (“Personal Information”) in the “Counting Sheep : Idle Farm” mobile application (“Mobile Application” or “Service”) and any of its related products and services (collectively, “Services”), and our practices for collecting, using, maintaining, protecting, and disclosing that Personal Information. It also describes the choices available to you regarding our use of your Personal Information and how you can access and update it.</p>
+<p>This Policy is a legally binding agreement between you (“User”, “you” or “your”) and Pear Tree Co.,Ltd. (“Pear Tree Co.,Ltd.”, “we”, “us” or “our”). If you are entering into this Policy on behalf of a business or other legal entity, you represent that you have the authority to bind such entity to this Policy, in which case the terms “User”, “you” or “your” shall refer to such entity. If you do not have such authority, or if you do not agree with the terms of this Policy, you must not accept this Policy and may not access and use the Mobile Application and Services. By accessing and using the Mobile Application and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Policy. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.</p>
+<div class="toc"><h3>Table of contents</h3><ol class="toc"><li><a href="#collection-of-personal-information">Collection of personal information</a></li><li><a href="#use-and-processing-of-collected-information">Use and processing of collected information</a></li><li><a href="#disclosure-of-information">Disclosure of information</a></li><li><a href="#retention-of-information">Retention of information</a></li><li><a href="#privacy-of-children">Privacy of children</a></li><li><a href="#links-to-other-resources">Links to other resources</a></li><li><a href="#information-security">Information security</a></li><li><a href="#data-breach">Data breach</a></li><li><a href="#changes-and-amendments">Changes and amendments</a></li><li><a href="#acceptance-of-this-policy">Acceptance of this policy</a></li><li><a href="#contacting-us">Contacting us</a></li></ol></div>
+<h2 id="collection-of-personal-information">Collection of personal information</h2>
+<p>You can access and use the Mobile Application and Services without telling us who you are or revealing any information by which someone could identify you as a specific, identifiable individual. If, however, you wish to use some of the features offered in the Mobile Application, you may be asked to provide certain Personal Information (for example, your name and e-mail address).</p>
+<p>We receive and store any information you knowingly provide to us when you fill any forms in the Mobile Application. When required, this information may include any other materials you willingly submit to us (such as articles, images, feedback, etc).</p>
+<p>You can choose not to provide us with your Personal Information, but then you may not be able to take advantage of some of the features in the Mobile Application. Users who are uncertain about what information is mandatory are welcome to contact us.</p>
+<h2 id="use-and-processing-of-collected-information">Use and processing of collected information</h2>
+<p>We act as a data controller and a data processor when handling Personal Information, unless we have entered into a data processing agreement with you in which case you would be the data controller and we would be the data processor.</p>
+<p>Our role may also differ depending on the specific situation involving Personal Information. We act in the capacity of a data controller when we ask you to submit your Personal Information that is necessary to ensure your access and use of the Mobile Application and Services. In such instances, we are a data controller because we determine the purposes and means of the processing of Personal Information.</p>
+<p>We act in the capacity of a data processor in situations when you submit Personal Information through the Mobile Application and Services. We do not own, control, or make decisions about the submitted Personal Information, and such Personal Information is processed only in accordance with your instructions. In such instances, the User providing Personal Information acts as a data controller.</p>
+<p>In order to make the Mobile Application and Services available to you, or to meet a legal obligation, we may need to collect and use certain Personal Information. If you do not provide the information that we request, we may not be able to provide you with the requested products or services. Any of the information we collect from you may be used for the following purposes:</p>
+<ul>
+<li>Respond to inquiries and offer support</li>
+<li>Request user feedback</li>
+<li>Improve user experience</li>
+<li>Run and operate the Mobile Application and Services</li>
+</ul>
+<p>Processing your Personal Information depends on how you interact with the Mobile Application and Services, where you are located in the world and if one of the following applies: (a) you have given your consent for one or more specific purposes; (b) provision of information is necessary for the performance of this Policy with you and/or for any pre-contractual obligations thereof; (c) processing is necessary for compliance with a legal obligation to which you are subject; (d) processing is related to a task that is carried out in the public interest or in the exercise of official authority vested in us; (e) processing is necessary for the purposes of the legitimate interests pursued by us or by a third party.</p>
+<p>Note that under some legislations we may be allowed to process information until you object to such processing by opting out, without having to rely on consent or any other of the legal bases. In any case, we will be happy to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Information is a statutory or contractual requirement, or a requirement necessary to enter into a contract.</p>
+<h2 id="disclosure-of-information">Disclosure of information</h2>
+<p>To maintain the highest level of privacy and to protect your Personal Information to the full extent, we do not share your Personal Information with any third parties.</p>
+<p>However, we may also disclose any Personal Information we collect, use or receive if required or permitted by law, such as to comply with a subpoena or similar legal process, and when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.</p>
+<h2 id="retention-of-information">Retention of information</h2>
+<p>We will retain and use your Personal Information for the period necessary to comply with our legal obligations, as long as your user account remains active, to enforce our Policy, resolve disputes, and unless a longer retention period is required or permitted by law.</p>
+<p>We may use any aggregated data derived from or incorporating your Personal Information after you update or delete it, but not in a manner that would identify you personally. Once the retention period expires, Personal Information shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification, and the right to data portability cannot be enforced after the expiration of the retention period.</p>
+<h2 id="privacy-of-children">Privacy of children</h2>
+<p>We do not knowingly collect any Personal Information from children under the age of 13. If you are under the age of 13, please do not submit any Personal Information through the Mobile Application and Services. If you have reason to believe that a child under the age of 13 has provided Personal Information to us through the Mobile Application and Services, please contact us to request that we delete that child’s Personal Information from our Services.</p>
+<p>We encourage parents and legal guardians to monitor their children’s Internet usage and to help enforce this Policy by instructing their children never to provide Personal Information through the Mobile Application and Services without their permission. We also ask that all parents and legal guardians overseeing the care of children take the necessary precautions to ensure that their children are instructed to never give out Personal Information when online without their permission.</p>
+<h2 id="links-to-other-resources">Links to other resources</h2>
+<p>The Mobile Application and Services contain links to other resources that are not owned or controlled by us. Please be aware that we are not responsible for the privacy practices of such other resources or third parties. We encourage you to be aware when you leave the Mobile Application and Services and to read the privacy statements of each and every resource that may collect Personal Information.</p>
+<h2 id="information-security">Information security</h2>
+<p>We secure information you provide on computer servers in a controlled, secure environment, protected from unauthorized access, use, or disclosure. We maintain reasonable administrative, technical, and physical safeguards in an effort to protect against unauthorized access, use, modification, and disclosure of Personal Information in our control and custody. However, no data transmission over the Internet or wireless network can be guaranteed.</p>
+<p>Therefore, while we strive to protect your Personal Information, you acknowledge that (a) there are security and privacy limitations of the Internet which are beyond our control; (b) the security, integrity, and privacy of any and all information and data exchanged between you and the Mobile Application and Services cannot be guaranteed; and (c) any such information and data may be viewed or tampered with in transit by a third party, despite best efforts.</p>
+<h2 id="data-breach">Data breach</h2>
+<p>In the event we become aware that the security of the Mobile Application and Services has been compromised or Users’ Personal Information has been disclosed to unrelated third parties as a result of external activity, including, but not limited to, security attacks or fraud, we reserve the right to take reasonably appropriate measures, including, but not limited to, investigation and reporting, as well as notification to and cooperation with law enforcement authorities. In the event of a data breach, we will make reasonable efforts to notify affected individuals if we believe that there is a reasonable risk of harm to the User as a result of the breach or if notice is otherwise required by law. When we do, we will send you an email.</p>
+<h2 id="changes-and-amendments">Changes and amendments</h2>
+<p>We reserve the right to modify this Policy or its terms related to the Mobile Application and Services at any time at our discretion. When we do, we will revise the updated date at the bottom of this page, post a notification in the Mobile Application. We may also provide notice to you in other ways at our discretion, such as through the contact information you have provided.</p>
+<p>An updated version of this Policy will be effective immediately upon the posting of the revised Policy unless otherwise specified. Your continued use of the Mobile Application and Services after the effective date of the revised Policy (or such other act specified at that time) will constitute your consent to those changes. However, we will not, without your consent, use your Personal Information in a manner materially different than what was stated at the time your Personal Information was collected.</p>
+<h2 id="acceptance-of-this-policy">Acceptance of this policy</h2>
+<p>You acknowledge that you have read this Policy and agree to all its terms and conditions. By accessing and using the Mobile Application and Services and submitting your information you agree to be bound by this Policy. If you do not agree to abide by the terms of this Policy, you are not authorized to access or use the Mobile Application and Services. This policy has been created with the help of the <a href="https://www.websitepolicies.com/privacy-policy-generator">privacy policy generator</a>.</p>
+<h2 id="contacting-us">Contacting us</h2>
+<p>If you have any questions, concerns, or complaints regarding this Policy, the information we hold about you, or if you wish to exercise your rights, we encourage you to contact us using the details below:</p>
+<p><a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;c&#111;&#110;&#116;ac&#116;us&#64;p&#101;a&#114;-&#116;r&#101;&#101;&#46;io">c&#111;n&#116;&#97;ct&#117;&#115;&#64;&#112;e&#97;&#114;&#45;&#116;ree.i&#111;</a><br/>79, Gimpohangang 9-ro, Gimpo-si, Gyeonggi-do, Republic of Korea</p>
+<p>We will attempt to resolve complaints and disputes and make every reasonable effort to honor your wish to exercise your rights as quickly as possible and in any event, within the timescales provided by applicable data protection laws.</p>
+<p>This document was last updated on May 20, 2024</p>
             {/* <Markdown content= /> */}
             {/* <form className="mt-4" action={revalidateWiki}>
                 <SubmitButton text="Click to Revalidate" />
