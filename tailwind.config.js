@@ -26,7 +26,27 @@ module.exports = {
                     secondary: '#016968',
                     info: '#2bdcd2',
                     'info-content': '#171717',
-                }
+                },
+                mytheme: {
+          
+                    "primary": "#ffa317",
+                             
+                    "secondary": "#fed7aa",
+                             
+                    "accent": "#0041c7",
+                             
+                    "neutral": "#f3f4f6",
+                             
+                    "base-100": "#f5f5f4",
+                             
+                    "info": "#c7d2fe",
+                             
+                    "success": "#00ff00",
+                             
+                    "warning": "#ca8a04",
+                             
+                    "error": "#ff0000",
+                             },
             }
         ]
     },

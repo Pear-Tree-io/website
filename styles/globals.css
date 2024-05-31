@@ -13,46 +13,24 @@
 @layer base {
     :not(pre) > code {
         font-family: 'ONE-Mobile-POP';
-        /* @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200; */
         font-size: 3em;
     }
 
     html {
-        background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-        background-image: url('../public/background.png');
-        background-repeat: repeat;
+        background-color: 'base-100';
+        /* color; */
         font-family: 'ONE-Mobile-POP';
         font-size: 3em;
+        min-width: 1080px;
+        min-height: 100vh;
+        margin: 2em;
     }
 
     h1 {
-        font-size: 4em;
-        /* @apply mb-6 text-4xl font-bold tracking-tight md:text-5xl; */
+        font-size: 1.5em;
     }
 
-    h2 {
-        font-family: 'ONE-Mobile-POP';
-        font-size: 3.8em;
+    p {
+        font-size: .58em;
     }
-}
- 
-a {
-    font-family: 'ONE-Mobile-POP';
-    @apply underline
-}
-
-.markdown {
-    @apply mb-1;
-}
-
-.alert .markdown {
-    @apply mb-0;
-}
-
-.markdown p {
-    /* @apply mb-3; */
-}
-
-.btn:disabled {
-    @apply text-neutral-400 bg-neutral-700;
 }

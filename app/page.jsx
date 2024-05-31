@@ -30,7 +30,7 @@ const ctx = getNetlifyContext();
 
 export default function Page() {
     return (
-        <main className="flex flex-col gap-8 sm:gap-16">
+        <main>
             {/* <section className="flex flex-col items-start gap-3 sm:gap-4">
                 <ContextAlert />
                 <h1 className="mb-0">Netlify Platform Starter - Next.js</h1>
@@ -55,10 +55,12 @@ export default function Page() {
             </section>
             {!!cards?.length && <CardsGrid cards={cards} />} */}
             
-            <section>
-                <h2>페어트리</h2>
-                <p>양키 만드는 중</p>
-                {/* Add your content here */}
+            <section className="text-orange-400">
+                <h1>Through the fusion of technology and ideas, we will turn imagination into reality.</h1>
+                {/* <h2>페어트리</h2>
+                <p>양키 만드는 중</p> */}
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/fv9AfsAH0Bg" title="양 세는 소녀 : 갓생 힐링 농장 키우기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </main>
     );
