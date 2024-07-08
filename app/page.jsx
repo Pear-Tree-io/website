@@ -60,8 +60,7 @@ export default function Page() {
                 {/* <h2>페어트리</h2>
                 <p>양키 만드는 중</p> */}
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/fv9AfsAH0Bg" title="양 세는 소녀 : 갓생 힐링 농장 키우기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/jTOnUPKz-8A" title="양 세는 소녀 : 갓생 힐링 농장 키우기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </section>
         </main>
     );
 }
