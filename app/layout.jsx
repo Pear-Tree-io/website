@@ -4,8 +4,8 @@ import { Header } from '../components/header';
 
 export const metadata = {
     title: {
-        default: 'Pear Tree Co.,Ltd.'
         template: '%s | Pear Tree',
+        default: 'Pear Tree Co.,Ltd.'
     }
 };
 
