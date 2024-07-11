@@ -6,6 +6,7 @@ const navItems = [
     // { linkText: 'Home', href: '/' },
     { linkText: 'About', href: '/about' },
     { linkText: 'Privacy Policy', href: '/privacy-policy' },
+    { linkText: 'Terms Of Service', href: '/terms-of-service' },
     // { linkText: 'Image CDN', href: '/image-cdn' },
     // { linkText: 'Edge Function', href: '/edge' },
     // { linkText: 'Blobs', href: '/blobs' },
