@@ -63,8 +63,10 @@ export default function Page() {
                 {/* <h2>페어트리</h2>
                 <p>양키 만드는 중</p> */}
             </section>
-            <Image style={{marginTop: '10px', width: '270px'}} src={gameLogo} alt="Game Logo" />
-            <Link style={{marginBottom: '10px'}} href="https://play.google.com/store/apps/details?id=com.PearTree.CountSheap">
+            <Link style={{marginTop: '10px', marginBottom: '5px', width: '270px'}} href="https://play.google.com/store/apps/details?id=com.PearTree.CountSheap">
+                <Image src={gameLogo} alt="Game Logo" />
+            </Link>
+            <Link style={{marginBottom: '20px'}} href="https://play.google.com/store/apps/details?id=com.PearTree.CountSheap">
                 <Image src={googlePlay} alt="Google Play Badge" />
             </Link>
             <iframe width="1280" height="720" src="https://www.youtube.com/embed/cHTeRaxZbSw" title="Counting Sheep : Idle Farm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
