@@ -7,6 +7,8 @@ import { ContextAlert } from 'components/context-alert';
 import { getNetlifyContext } from 'utils';
 import gameLogo from 'public/GetItOnGooglePlay_Badge_Web_color_English.png';
 import googlePlay from 'public/GetItOnGooglePlay_Badge_Web_color_English.png';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const cards = [
     //{ text: 'Hello', linkText: 'someLink', href: '/' }
