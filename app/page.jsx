@@ -61,6 +61,7 @@ export default function Page() {
                 <h1>Through the fusion of technology and ideas, we will turn imagination into reality.</h1>
                 {/* <h2>페어트리</h2>
                 <p>양키 만드는 중</p> */}
+            </section>
             <Image src="https://icon-uap.iads.unity3d.com/demand-creatives/icons/icon_23983fd61d4fb0db98d7ad0220d0b395_transformed_NaN.jpeg" alt="Google Play Badge" />
             <Link href="https://play.google.com/store/apps/details?id=com.PearTree.CountSheap">
                 <Image src={googlePlay} alt="Google Play Badge" />
