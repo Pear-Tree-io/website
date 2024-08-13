@@ -5,7 +5,7 @@ import { RandomQuote } from 'components/random-quote';
 import { Markdown } from 'components/markdown';
 import { ContextAlert } from 'components/context-alert';
 import { getNetlifyContext } from 'utils';
-import gameLogo from 'public/GetItOnGooglePlay_Badge_Web_color_English.png';
+import gameLogo from 'public/AppIcon_B.png';
 import googlePlay from 'public/GetItOnGooglePlay_Badge_Web_color_English.png';
 import Image from 'next/image';
 
@@ -63,7 +63,7 @@ export default function Page() {
                 {/* <h2>페어트리</h2>
                 <p>양키 만드는 중</p> */}
             </section>
-            <Image style={{margin: '10px'}} src="https://lh3.googleusercontent.com/KkRRYXHjewz2BYUCDipyleA_3gdxRP44bpvWMZNlM2OiNDzKFyz3CEaGK9ThgmSBByc" alt="Game Logo" />
+            <Image style={{margin: '10px'}} src={gameLogo} alt="Game Logo" />
             <Link style={{margin: '10px'}} href="https://play.google.com/store/apps/details?id=com.PearTree.CountSheap">
                 <Image src={googlePlay} alt="Google Play Badge" />
             </Link>
