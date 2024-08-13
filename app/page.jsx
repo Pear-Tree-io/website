@@ -63,7 +63,7 @@ export default function Page() {
                 {/* <h2>페어트리</h2>
                 <p>양키 만드는 중</p> */}
             </section>
-            <Image style={{margin: '10px'}} src={gameLogo} alt="Game Logo" />
+            <Image style={{margin: '10px', width: '270px'}} src={gameLogo} alt="Game Logo" />
             <Link style={{margin: '10px'}} href="https://play.google.com/store/apps/details?id=com.PearTree.CountSheap">
                 <Image src={googlePlay} alt="Google Play Badge" />
             </Link>
